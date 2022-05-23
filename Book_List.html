@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book List Js OOP</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="h1">Add Book</h1>
+
+      <form action="" id="myForm">
+        <div>
+          <label for="title">Title</label> <br />
+          <input type="text" name="title" id="title" />
+        </div>
+
+        <div>
+          <label for="author">Author</label> <br />
+          <input type="text" name="author" id="author" />
+        </div>
+
+        <div>
+          <label for="isbn">ISBN</label> <br />
+          <input type="isbn" name="title" id="isbn" />
+        </div>
+        <input type="submit" value="Add Book" />
+      </form>
+
+      <table id="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody class="body"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
