@@ -73,6 +73,7 @@ if (window.localStorage.getItem("books")) {
 
 //on submit
 myForm.onsubmit = function (e) {
+  e.preventDefault();
   let title = document.getElementById("title").value;
   let author = document.getElementById("author").value;
   let isbn = document.getElementById("isbn").value;
@@ -83,8 +84,6 @@ myForm.onsubmit = function (e) {
   action.addBookToPage();
   //call clearFields
   action.clearFields();
-
-  e.preventDefault();
 };
 
 //on delete
